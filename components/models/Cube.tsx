@@ -6,13 +6,13 @@ import { useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { AnimationAction, Group, MathUtils } from "three";
 
-useGLTF.preload("/exploding_cube.glb");
+useGLTF.preload("/exploding-sphere.glb");
 
 export default function Cube() {
   const motionVal = useMotionValue(0);
   const spring = useSpring(motionVal, { stiffness: 20 });
   const group = useRef<Group>(null);
-  const { nodes, animations, scene } = useGLTF("/exploding_cube.glb");
+  const { nodes, animations, scene } = useGLTF("/exploding-sphere.glb");
   const { actions } = useAnimations(animations, scene);
   const scroll = useScroll();
 
@@ -32,8 +32,9 @@ export default function Cube() {
   return (
     <group
       onPointerUp={() => motionVal.set(0)}
-      onPointerDown={() => motionVal.set(0.8)}
+      onPointerDown={() => motionVal.set(1)}
       ref={group}
+      scale={[2, 2, 2]}
     >
       <primitive object={scene} />
     </group>
