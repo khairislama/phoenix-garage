@@ -2,13 +2,14 @@ import { useGLTF, Text, MeshTransmissionMaterial } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useControls } from "leva";
 import { useRef } from "react";
+import * as THREE from "three";
 
 let frame = 1;
 
 function TextAnimation() {
   const { nodes } = useGLTF("text-over-torus.glb");
   const { viewport } = useThree();
-  const mesh = useRef();
+  const mesh = useRef<THREE.Mesh>(null!);
 
   useFrame(() => {
     mesh.current.rotation.y += 0.008;
