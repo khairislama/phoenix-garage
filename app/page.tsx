@@ -8,10 +8,17 @@ const CubeScene = dynamic(() => import("@/components/scenes/CubeScene"), {
   ssr: false,
 });
 
+const TextAnimationScene = dynamic(
+  () => import("@/components/scenes/TextAnimationScene"),
+  {
+    ssr: false,
+  }
+);
+
 export default function Home() {
   return (
-    <main className="h-screen">
-      <CubeScene />
+    <main className="relative h-screen">
+      <TextAnimationScene />
     </main>
   );
 }
