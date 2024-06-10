@@ -25,7 +25,7 @@ function TextAnimation() {
     thickness: { value: 0.3, min: 0, max: 3, step: 0.05 },
     roughness: { value: 0.1, min: 0, max: 1, step: 0.1 },
     transmission: { value: 0.9, min: 0, max: 3, step: 0.1 },
-    ior: { value: 1.5, min: 0, max: 3, step: 0.1 },
+    ior: { value: 0.8, min: 0, max: 3, step: 0.1 },
     ChromaticAberration: { value: 0.02, min: 0, max: 1 },
     backside: { value: true },
   });
@@ -33,7 +33,7 @@ function TextAnimation() {
   return (
     <group scale={viewport.width / 6.5}>
       <Text fontSize={1} position={[0, 0, -0.5]}>
-        Awsome 3D
+        Awesome 3D
       </Text>
       <mesh ref={mesh} {...nodes.Base} rotation={[0.1, 0, 0]}>
         <MeshTransmissionMaterial {...materialProps} />
