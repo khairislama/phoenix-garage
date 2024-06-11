@@ -12,6 +12,7 @@ function TextAnimation() {
   const mesh = useRef<THREE.Mesh>(null!);
 
   useFrame(() => {
+    mesh.current.rotation.x += 0.012;
     mesh.current.rotation.y += 0.008;
 
     if (frame > 480) {

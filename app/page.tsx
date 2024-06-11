@@ -18,6 +18,10 @@ const TextAnimationScene = dynamic(
 export default function Home() {
   return (
     <main className="relative h-screen">
+      <div className="container bg-transparent">
+        <h2>Testing</h2>
+        <p className="text-center">Kiiikiii</p>
+      </div>
       <TextAnimationScene />
     </main>
   );
