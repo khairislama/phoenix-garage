@@ -87,6 +87,7 @@ Hidden within the project are a dragon and phoenix model, adding an element of s
 This project was inspired by various tutorials and resources on 3D web development. Special thanks to the amazing communities behind Next.js, Three.js, React Three Fiber, and Drei for their incredible work and contributions.
 
 ## 📫 Contact
+
 If you have any questions, suggestions, or just want to connect, feel free to reach out:
 
-**Your Name**: [LinkedIn](https://www.linkedin.com/) | [Twitter](https://twitter.com/) | Email: your.email@example.com
+- **Khairi Slama**: [LinkedIn](https://www.linkedin.com/in/khairi-slama/) | [Twitter](https://x.com/khairislama) | [Email](mailto:khairi.slama.1996.br@gmail.com)
