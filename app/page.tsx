@@ -17,10 +17,13 @@ const TextAnimationScene = dynamic(
 
 export default function Home() {
   return (
-    <main className="relative h-screen">
+    <main className="relative h-screen z-10">
       <div className="container bg-transparent">
         <h2>Testing</h2>
-        <p className="text-center">Kiiikiii</p>
+        <p className="text-center">
+          I need to practice with a new tuto that simultaneously creates 3d
+          animation over static content
+        </p>
       </div>
       <TextAnimationScene />
     </main>
